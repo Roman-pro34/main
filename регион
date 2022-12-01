@@ -1,0 +1,18 @@
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+import java.util.Scanner;
+
+public class main {
+    public static void main(String[] args) {
+        Scanner c  = new Scanner( System.in);
+        System.out.println("Впишите регион из https://gist.github.com/silnov-v1/ce2a23e47201022691c9827d9c879d83 .");
+        String x = c.nextLine();
+        LocalDateTime y = LocalDateTime.now();
+        ZonedDateTime z = y.atZone(ZoneId.of("Europe/Moscow"));
+        System.out.println(z);
+        ZonedDateTime v = z.withZoneSameInstant(ZoneId.of(String.valueOf(x)));
+        System.out.println(v);
+    }
+}
+
