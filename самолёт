@@ -1,0 +1,12 @@
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+import java.time.temporal.ChronoUnit;
+  public class main {
+        public static void main(String[] args) {
+            ZonedDateTime x = ZonedDateTime.of(2022,11,26,23,45,0,0,ZoneId.of("Europe/Moscow"));
+            ZonedDateTime y = ZonedDateTime.of(2022,11,27,16,25,0,0,ZoneId.of("Asia/Magadan"));
+            long d = ChronoUnit.HOURS.between(x,y);
+            System.out.println(d);
+        }
+    }
+
