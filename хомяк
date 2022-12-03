@@ -1,0 +1,47 @@
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+import java.time.temporal.ChronoUnit;
+import java.util.Random;
+import java.util.Scanner;
+
+public class main {
+    public static void main(String[] args) {
+        LocalDateTime now = LocalDateTime.now();
+        System.out.println(now);
+
+        LocalDateTime n = now.plusMinutes(45);
+        System.out.println(n);
+
+        LocalDateTime s = n.plusMinutes(45);
+        System.out.println(s);
+
+        LocalDateTime u = s.plusMinutes(45);
+        System.out.println(u);
+
+        LocalDateTime q = u.plusMinutes(45);
+        System.out.println(q);
+
+        LocalDateTime w = q.plusMinutes(45);
+        System.out.println(w);
+
+        LocalDateTime r = w.plusMinutes(45);
+        System.out.println(r);
+
+        LocalDateTime t = r.plusMinutes(45);
+        System.out.println(t);
+
+        LocalDateTime y = t.plusMinutes(45);
+        System.out.println(y);
+
+        LocalDateTime i = y.plusMinutes(45);
+        System.out.println(i);
+
+        LocalDateTime j = i.plusMinutes(45);
+        System.out.println(j);
+
+
+
+    }
+}
